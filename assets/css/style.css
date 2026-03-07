@@ -300,9 +300,9 @@ a:hover {
 }
 
 .hero-photo-placeholder {
-  width: 260px;
-  height: 260px;
-  border-radius: 36px;
+  width: 210px;
+  height: 210px;
+  border-radius: 32px;
   background:
     radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.15), transparent 40%),
     radial-gradient(circle at 80% 10%, rgba(94, 234, 212, 0.2), transparent 40%),
@@ -320,8 +320,8 @@ a:hover {
 .hero-photo-placeholder::before {
   content: "";
   position: absolute;
-  inset: 16px;
-  border-radius: 28px;
+  inset: 14px;
+  border-radius: 26px;
   border: 1px dashed rgba(148, 163, 184, 0.5);
 }
 
@@ -336,7 +336,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 32px;
+  border-radius: 28px;
   position: relative;
   z-index: 1;
 }
