@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Elizaveta Pestova</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <span class="logo-mark">EP</span>
+          <span class="logo-text">Elizaveta Pestova</span>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="cv.html" class="nav-link">CV</a>
+          <a href="blog.html" class="nav-link active">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Professional notes &amp; updates</h1>
+          <p class="page-hero-subtitle">
+            Short posts about robotics, control, reinforcement learning, and practical lessons from
+            working with real robots.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container blog-list">
+          <article class="blog-card blog-card-featured">
+            <div class="blog-meta">
+              <span class="blog-date">Coming soon</span>
+              <span class="blog-tag">Sim-to-real</span>
+            </div>
+            <h2 class="blog-title">From simulation to real humanoid: what actually breaks</h2>
+            <p class="blog-excerpt">
+              A practical overview of issues that appear when transferring locomotion policies from
+              Isaac Sim and MuJoCo to real humanoid hardware: delays, state estimation, contacts,
+              safety margins and more.
+            </p>
+            <p class="blog-note">
+              This is a placeholder entry. Future posts will be published here and can be linked to
+              full articles or external resources (for example, Medium or personal notes).
+            </p>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-meta">
+              <span class="blog-date">Ideas for future posts</span>
+              <span class="blog-tag">Outline</span>
+            </div>
+            <h2 class="blog-title">Potential topics</h2>
+            <ul class="blog-topics">
+              <li>Designing Nav2 pipelines for real construction-site robots.</li>
+              <li>Building robust simulation scenes in Isaac Sim for multi-robot setups.</li>
+              <li>MPC vs RL for quadruped locomotion — where each approach shines.</li>
+              <li>Lessons learned from tuning Kp/Kd for humanoid controllers.</li>
+              <li>State estimation for legged robots using IMU and contact information.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>&copy; <span id="year"></span> Elizaveta Pestova</span>
+        <span class="footer-note">Robotics, control &amp; autonomy</span>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>

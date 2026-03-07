@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Elizaveta Pestova</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <span class="logo-mark">EP</span>
+          <span class="logo-text">Elizaveta Pestova</span>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="cv.html" class="nav-link">CV</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Robotics &amp; autonomy projects</h1>
+          <p class="page-hero-subtitle">
+            A selection of recent work across sim-to-real locomotion, teleoperation, simulation
+            infrastructure and navigation for real robots.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Case 1</div>
+            <h2 class="project-title">Sim-to-Real Pipeline for Humanoid Motion</h2>
+            <p class="project-subtitle">Isaac Sim &rarr; MuJoCo &rarr; Real humanoid robot</p>
+            <p>
+              Building and tuning a sim-to-real locomotion pipeline for a humanoid robot, combining
+              NVIDIA Isaac tools with MuJoCo and deployment on real hardware.
+            </p>
+            <ul class="project-points">
+              <li>Designed a pipeline from Isaac Sim to MuJoCo and finally to the real robot.</li>
+              <li>Tuned joint-level PD control (Kp/Kd) for stable and responsive motion.</li>
+              <li>Modified simulation and controller code to support new behaviors and constraints.</li>
+              <li>Compared motion quality between simulation environments and real hardware.</li>
+              <li>Implemented locomotion constraints to keep motions safe and feasible.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Case 2</div>
+            <h2 class="project-title">Hand Teleoperation &amp; Sensor-Based Gripper/Finger Work</h2>
+            <p class="project-subtitle">Teleoperation with rich sensing for robot hands</p>
+            <p>
+              Developing a teleoperation setup for robot hands and grippers with integrated sensing to
+              enable precise and robust manipulation in both simulation and reality.
+            </p>
+            <ul class="project-points">
+              <li>Implemented teleoperation control for robot hands and multi-fingered grippers.</li>
+              <li>Integrated sensors for fingers and grippers to improve contact awareness.</li>
+              <li>Worked with camera and LiDAR data to support perception-driven manipulation.</li>
+              <li>Controlled hands across real and simulated stacks, keeping interfaces aligned.</li>
+              <li>Performed systematic testing and validation on both real and simulated setups.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Case 3</div>
+            <h2 class="project-title">Simulation Infrastructure in Isaac Sim</h2>
+            <p class="project-subtitle">Scalable scenes &amp; tools for multi-robot experiments</p>
+            <p>
+              Building robust scenes and tooling in Isaac Sim to support realistic physics, multi-robot
+              setups and rapid experimentation.
+            </p>
+            <ul class="project-points">
+              <li>Created scenes with realistic environments and robot assets.</li>
+              <li>Configured collisions and contacts to match real-world behavior.</li>
+              <li>Tuned robot physics and URDF/USD parameters for stability and fidelity.</li>
+              <li>Constructed multi-robot scenes, including forklifts and other construction robots.</li>
+              <li>Used action graphs and object loading pipelines for flexible scenario setup.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Case 4</div>
+            <h2 class="project-title">Navigation &amp; Real Robot Deployment</h2>
+            <p class="project-subtitle">Nav2 pipeline on real hardware</p>
+            <p>
+              End-to-end navigation pipeline using Nav2 and ROS 2, from mapping and perception to
+              debugging and deployment on real robots in challenging environments.
+            </p>
+            <ul class="project-points">
+              <li>Assembled and tuned the Nav2 pipeline for mobile robots.</li>
+              <li>Worked with LiDAR, odometry and mapping to create robust navigation stacks.</li>
+              <li>Ran quality checks (QC) for autonomy behavior in realistic environments.</li>
+              <li>Deployed and debugged the stack on real robots, including network issues.</li>
+              <li>Handled hardware failures and edge cases in the field.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>&copy; <span id="year"></span> Elizaveta Pestova</span>
+        <span class="footer-note">Robotics, control &amp; autonomy</span>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>

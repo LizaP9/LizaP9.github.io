@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elizaveta Pestova | Robotics Software Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <span class="logo-mark">EP</span>
+          <span class="logo-text">Elizaveta Pestova</span>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="cv.html" class="nav-link">CV</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hero-kicker">Robotics Software Engineer</p>
+            <h1>Control, Locomotion &amp; Real-World Robotics</h1>
+            <p class="hero-summary">
+              Robotics software engineer with experience in a fast-moving startup environment,
+              owning autonomy features end-to-end: from problem framing and technical strategy
+              to integration, testing and real-robot deployment.
+            </p>
+            <div class="hero-meta">
+              <div class="hero-location">Based in Moscow, Russia</div>
+              <div class="hero-tags">
+                <span class="tag">Humanoid &amp; legged robots</span>
+                <span class="tag">Reinforcement learning</span>
+                <span class="tag">Control systems</span>
+                <span class="tag">Simulation &amp; sim-to-real</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn primary">View robotics projects</a>
+              <a href="cv.html" class="btn secondary">Open full CV</a>
+            </div>
+            <div class="hero-contact">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:silverfrost.club@gmail.com" class="contact-value">
+                  silverfrost.club@gmail.com
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <a
+                  href="https://github.com/LizaP9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-value"
+                >
+                  github.com/LizaP9
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/elizaveta-pestova"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-value"
+                >
+                  linkedin.com/in/elizaveta-pestova
+                </a>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/LizaP9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-link"
+                aria-label="GitHub"
+              >
+                <span class="icon-circle">GH</span>
+                <span class="icon-text">GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elizaveta-pestova"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-link"
+                aria-label="LinkedIn"
+              >
+                <span class="icon-circle">in</span>
+                <span class="icon-text">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-placeholder">
+              <span>Your photo here</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="container">
+          <h2 class="section-title">Technical stack</h2>
+          <div class="stack-grid">
+            <div class="stack-card">
+              <h3>Programming</h3>
+              <p>Python, C++, Matlab, SQL</p>
+            </div>
+            <div class="stack-card">
+              <h3>Robotics &amp; Simulation</h3>
+              <p>ROS 2, ROS, Isaac Sim / IsaacLab, Raisim, MuJoCo, Gazebo, Unity</p>
+            </div>
+            <div class="stack-card">
+              <h3>Tools &amp; Platforms</h3>
+              <p>Git, Docker, Linux, SLAM, Nav2, RViz</p>
+            </div>
+            <div class="stack-card">
+              <h3>Hardware &amp; Manufacturing</h3>
+              <p>3D printing, CNC milling, laser cutting; BLDC motor control; URDF / robot modeling</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container two-column">
+          <div>
+            <h2 class="section-title">What I like to work on</h2>
+            <p>
+              I focus on the intersection of control, reinforcement learning and robotics: designing
+              and deploying locomotion and autonomy systems that work reliably on real hardware.
+            </p>
+            <p>
+              Recently, I have been working on humanoid and quadruped robots, sim-to-real pipelines,
+              navigation stacks, and simulation infrastructure for multi-robot scenarios.
+            </p>
+          </div>
+          <div>
+            <h2 class="section-title">Highlights</h2>
+            <ul class="highlights-list">
+              <li>Unitree humanoid and quadruped locomotion controllers (RL and MPC).</li>
+              <li>End-to-end Nav2 autonomy stack with LiDAR-based mapping and navigation.</li>
+              <li>Simulation setups in Isaac Sim for complex construction-site scenarios.</li>
+              <li>Hands-on work with robot hardware, sensors and real-world deployment.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>&copy; <span id="year"></span> Elizaveta Pestova</span>
+        <span class="footer-note">Robotics, control &amp; autonomy</span>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Elizaveta Pestova</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <span class="logo-mark">EP</span>
+          <span class="logo-text">Elizaveta Pestova</span>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="cv.html" class="nav-link active">CV</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Curriculum Vitae</h1>
+          <p class="page-hero-subtitle">
+            Robotics Software Engineer with a focus on control, locomotion and sim-to-real deployment
+            for humanoid and legged robots.
+          </p>
+          <div class="cv-header-grid">
+            <div>
+              <div class="cv-name">Elizaveta Pestova</div>
+              <div class="cv-role">Robotics Software Engineer | Control Systems</div>
+              <div class="cv-location">Moscow, Russia</div>
+            </div>
+            <div class="cv-contact">
+              <a href="mailto:silverfrost.club@gmail.com">silverfrost.club@gmail.com</a>
+              <span>+49 152 5584 1649</span>
+              <span>+7 929 478 2220</span>
+              <a href="https://github.com/LizaP9" target="_blank" rel="noopener noreferrer">
+                github.com/LizaP9
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elizaveta-pestova"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/elizaveta-pestova
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cv-section">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            Robotics software engineer with experience in a fast-moving startup environment, owning
+            autonomy features end-to-end, from problem framing and technical strategy to integration,
+            testing and real-robot deployment. Focused on control, locomotion and reinforcement
+            learning for humanoid and quadruped robots.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container cv-section">
+          <h2 class="section-title">Work experience (4 years)</h2>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Robotics Software Engineer</h3>
+                <div class="cv-entry-company">BUILDROID</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Jul 2025 – Feb 2026</div>
+              </div>
+            </header>
+            <ul>
+              <li>
+                Contributed to technical decisions on simulation and autonomy architecture for
+                construction-site robotics.
+              </li>
+              <li>
+                Co-defined a humanoid use case and assembled an Isaac Sim scene (humanoid +
+                specialized robot) for navigation and QC demos.
+              </li>
+              <li>
+                Trained and deployed RL controllers for Unitree H1–2 using IsaacLab/Isaac Sim/MuJoCo
+                and real-robot experiments.
+              </li>
+              <li>
+                Integrated a ROS 2 autonomy stack: sim-to-real bridging, TF, LiDAR mapping/odometry,
+                navigation and perception for specialized robots.
+              </li>
+              <li>Tools: Python, ROS 2, Isaac Sim/IsaacLab, MuJoCo, Nav2, SLAM, RViz, NVIDIA tools.</li>
+            </ul>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Research Assistant</h3>
+                <div class="cv-entry-company">
+                  Skolkovo Institute of Science and Technology (Skoltech)
+                </div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Sep 2023 – May 2025</div>
+              </div>
+            </header>
+            <ul>
+              <li>Developed MPC- and RL-based locomotion controllers for a custom quadruped and Unitree A1.</li>
+              <li>Built and tuned robot leg hardware and controlled BLDC motors via CAN/UART.</li>
+              <li>Ran real-robot experiments and data collection for locomotion research.</li>
+              <li>Tools: C++, Python, ROS/ROS 2, URDF, Raisim, Isaac Sim, MuJoCo, Gazebo.</li>
+            </ul>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Visiting Researcher (Intelligent Robotics Lab)</h3>
+                <div class="cv-entry-company">Deggendorf Institute of Technology, Cham</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Sep 2024 – Dec 2024</div>
+              </div>
+            </header>
+            <ul>
+              <li>
+                Developed a state estimator for Unitree Go2 using IMU, foot contacts and kinematics
+                for CoM position and orientation.
+              </li>
+              <li>Integrated the estimator into a ROS pipeline and validated it on the real robot.</li>
+              <li>Tools: C++, ROS, Docker, unitree-sdk2, IMU, LiDAR.</li>
+            </ul>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Intern, Robotics Lab</h3>
+                <div class="cv-entry-company">Sber</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Jun 2024 – Jul 2024</div>
+              </div>
+            </header>
+            <ul>
+              <li>
+                Implemented imitation learning and RL methods (HIMLoco, AMP, DreamWaQ) for
+                legged/humanoid robots.
+              </li>
+              <li>Modified environments for Unitree H1 and tuned reward functions.</li>
+              <li>Ran large-scale parallel training in Isaac Sim.</li>
+              <li>Tools: Python, Isaac Sim, legged_gym, rsl_rl.</li>
+            </ul>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Data Analyst (Internal Audit)</h3>
+                <div class="cv-entry-company">AO Raiffeisenbank</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Feb 2023 – Aug 2023</div>
+              </div>
+            </header>
+            <ul>
+              <li>Performed data analysis for risk assessment and internal reporting.</li>
+              <li>Automated recurring checks and improved data quality for audit workflows.</li>
+              <li>Tools: SQL, Python (analysis), reporting.</li>
+            </ul>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>System Analyst</h3>
+                <div class="cv-entry-company">AO Spargo Technologies</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Mar 2022 – Dec 2022</div>
+              </div>
+            </header>
+            <ul>
+              <li>Worked on procurement automation: requirements, process mapping and integration.</li>
+              <li>Supported delivery with documentation and stakeholder communication.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cv-section">
+          <h2 class="section-title">Education</h2>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>MSc. Engineering Systems (Robotics)</h3>
+                <div class="cv-entry-company">Skolkovo Institute of Science and Technology</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Sep 2023 – Jun 2025</div>
+              </div>
+            </header>
+            <p>
+              Thesis: Adaptive MPC Algorithm with Application to Quadrupedal Robots. Focus on
+              robotics, control and learning-based locomotion.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>BSc. Control in Technical Systems (GPA 5.0/5.0)</h3>
+                <div class="cv-entry-company">
+                  People’s Friendship University of Russia (RUDN University)
+                </div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Sep 2019 – Jul 2023</div>
+              </div>
+            </header>
+            <p>
+              Thesis: Development of an adaptive algorithm for controlling the drive of a manipulative
+              robot using Lyapunov functions. Focus on control systems, engineering fundamentals and
+              applied math.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Diploma: Technical English Translator</h3>
+                <div class="cv-entry-company">People’s Friendship University of Russia</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Sep 2019 – Jul 2023</div>
+              </div>
+            </header>
+            <p>Professional English for engineering and technical documentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container cv-section">
+          <h2 class="section-title">Skills</h2>
+          <div class="stack-grid">
+            <div class="stack-card">
+              <h3>Languages</h3>
+              <p>English (Advanced), Russian (Native)</p>
+            </div>
+            <div class="stack-card">
+              <h3>Programming</h3>
+              <p>Python, C++, Matlab, SQL</p>
+            </div>
+            <div class="stack-card">
+              <h3>Robotics &amp; Simulation</h3>
+              <p>ROS 2, ROS, Isaac Sim/IsaacLab, Raisim, MuJoCo, Gazebo, Unity</p>
+            </div>
+            <div class="stack-card">
+              <h3>Tools</h3>
+              <p>Git, Docker, Linux, Simulink, AutoCAD, Fusion 360</p>
+            </div>
+            <div class="stack-card">
+              <h3>Management</h3>
+              <p>Notion, ClickUp, Confluence, Agile workflows</p>
+            </div>
+            <div class="stack-card">
+              <h3>Manufacturing</h3>
+              <p>3D printing, CNC milling, laser cutting</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cv-section">
+          <h2 class="section-title">Publications</h2>
+          <ul class="publications-list">
+            <li>
+              Adaptive MPC-based quadrupedal robot control under periodic disturbances.
+              <span class="pub-meta">arXiv:2505.12361 — GitHub: Periodic-Adaptive-MPC</span>
+            </li>
+            <li>
+              Quadrupedal Robot Skateboard Mounting via Reverse Curriculum Learning.
+              <span class="pub-meta">arXiv:2505.06561 — GitHub: quadruped-skateboard-mounting</span>
+            </li>
+            <li>
+              Optimizing energy consumption for legged robot in cyclic tasks by adapting equilibrium
+              position and stiffness of a parallel torsion spring (IEEE ROBIO 2024).
+              <span class="pub-meta">arXiv:2411.18295 — GitHub: AdaptiveSpring</span>
+            </li>
+            <li>
+              HyperSurf: Quadruped Robot Leg Capable of Surface Recognition with GRU and
+              Real-to-Sim Transferring (IEEE SMC 2024).
+              <span class="pub-meta">arXiv:2407.15622</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>&copy; <span id="year"></span> Elizaveta Pestova</span>
+        <span class="footer-note">Robotics, control &amp; autonomy</span>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
