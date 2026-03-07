@@ -40,32 +40,33 @@
             <h2 class="project-title">Sim-to-Real Pipeline for Humanoid Motion</h2>
             <p class="project-subtitle">Isaac Sim &rarr; MuJoCo &rarr; Real humanoid robot</p>
             <p>
-              Building and tuning a sim-to-real locomotion pipeline for a humanoid robot, combining
+              Building and tuning a sim-to-real locomotion pipeline for Unitree H1-2 humanoid robot, combining
               NVIDIA Isaac tools with MuJoCo and deployment on real hardware.
             </p>
             <ul class="project-points">
               <li>Designed a pipeline from Isaac Sim to MuJoCo and finally to the real robot.</li>
-              <li>Tuned joint-level PD control (Kp/Kd) for stable and responsive motion.</li>
-              <li>Modified simulation and controller code to support new behaviors and constraints.</li>
+              <li>Tuned joint-level PD control (Kp/Kd) for stable sim-to-real transfer.</li>
+              <li>Modified simulation and controller code to support new motions.</li>
               <li>Compared motion quality between simulation environments and real hardware.</li>
-              <li>Implemented locomotion constraints to keep motions safe and feasible.</li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-tag">Case 2</div>
-            <h2 class="project-title">Hand Teleoperation &amp; Sensor-Based Gripper/Finger Work</h2>
-            <p class="project-subtitle">Teleoperation with rich sensing for robot hands</p>
+            <h2 class="project-title">Hand Teleoperation &amp; Gripper/Finger Control</h2>
+            <p class="project-subtitle">Teleoperation of Unitree robot hands with Apple headset</p>
             <p>
-              Developing a teleoperation setup for robot hands and grippers with integrated sensing to
-              enable precise and robust manipulation in both simulation and reality.
+              Configuring an existing Unitree teleoperation system for robot arms using an
+              Apple headset and VR controllers, including developing grippers motion driven by trigger input.
             </p>
             <ul class="project-points">
-              <li>Implemented teleoperation control for robot hands and multi-fingered grippers.</li>
-              <li>Integrated sensors for fingers and grippers to improve contact awareness.</li>
-              <li>Worked with camera and LiDAR data to support perception-driven manipulation.</li>
-              <li>Controlled hands across real and simulated stacks, keeping interfaces aligned.</li>
-              <li>Performed systematic testing and validation on both real and simulated setups.</li>
+              <li>Configured teleoperation control for robot arms and hands grippers.</li>
+              <li>
+                Used VR controllers so that finger closure on the robot side was triggered by pressing
+                the controller triggers.
+              </li>
+              <li>Worked with camera and LiDAR data, configuring their SDKs and reading data on the robot.</li>
+              <li>Verified touch sensor behaviour on Inspire Hands robot grippers.</li>
             </ul>
           </article>
 
@@ -81,7 +82,9 @@
               <li>Created scenes with realistic environments and robot assets.</li>
               <li>Configured collisions and contacts to match real-world behavior.</li>
               <li>Tuned robot physics and URDF/USD parameters for stability and fidelity.</li>
-              <li>Constructed multi-robot scenes, including forklifts and other construction robots.</li>
+              <li>
+                Constructed multi-robot scenes with a construction robot, a manipulation arm and other robots.
+              </li>
               <li>Used action graphs and object loading pipelines for flexible scenario setup.</li>
             </ul>
           </article>
@@ -92,12 +95,15 @@
             <p class="project-subtitle">Nav2 pipeline on real hardware</p>
             <p>
               End-to-end navigation pipeline using Nav2 and ROS 2, from mapping and perception to
-              debugging and deployment on real robots in challenging environments.
+              debugging and deployment on real robots in indoor environment.
             </p>
             <ul class="project-points">
-              <li>Assembled and tuned the Nav2 pipeline for mobile robots.</li>
+              <li>Assembled and tuned the Nav2 pipeline for Unitree H1-2 humanoid robot.</li>
               <li>Worked with LiDAR, odometry and mapping to create robust navigation stacks.</li>
-              <li>Ran quality checks (QC) for autonomy behavior in realistic environments.</li>
+              <li>
+                Ran a computer-vision-based QC pipeline for construction-related checks and
+                for detecting humans and their hands.
+              </li>
               <li>Deployed and debugged the stack on real robots, including network issues.</li>
               <li>Handled hardware failures and edge cases in the field.</li>
             </ul>

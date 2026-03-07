@@ -332,6 +332,15 @@ a:hover {
   color: var(--text-muted);
 }
 
+.hero-photo-placeholder img.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  position: relative;
+  z-index: 1;
+}
+
 .section {
   padding: 2.4rem 0 2.6rem;
 }
