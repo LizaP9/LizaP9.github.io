@@ -36,6 +36,7 @@
       <section class="section">
         <div class="container projects-grid">
           <article class="project-card">
+            <p class="project-date">Jun 2025 – Sep 2025</p>
             <div class="project-tag">Case 1</div>
             <h2 class="project-title">Sim-to-Real Pipeline for Humanoid Motion</h2>
             <p class="project-subtitle">Isaac Sim &rarr; MuJoCo &rarr; Real humanoid robot</p>
@@ -52,6 +53,7 @@
           </article>
 
           <article class="project-card">
+            <p class="project-date">Sep 2025 – Dec 2025</p>
             <div class="project-tag">Case 2</div>
             <h2 class="project-title">Hand Teleoperation &amp; Gripper/Finger Control</h2>
             <p class="project-subtitle">Teleoperation of Unitree robot hands with Apple headset</p>
@@ -71,6 +73,7 @@
           </article>
 
           <article class="project-card">
+            <p class="project-date">Jun 2025 – Feb 2026</p>
             <div class="project-tag">Case 3</div>
             <h2 class="project-title">Simulation Infrastructure in Isaac Sim</h2>
             <p class="project-subtitle">Scalable scenes &amp; tools for multi-robot experiments</p>
@@ -90,6 +93,7 @@
           </article>
 
           <article class="project-card">
+            <p class="project-date">Jan 2026 – Feb 2026</p>
             <div class="project-tag">Case 4</div>
             <h2 class="project-title">Navigation &amp; Real Robot Deployment</h2>
             <p class="project-subtitle">Nav2 pipeline on real hardware</p>
@@ -106,6 +110,39 @@
               </li>
               <li>Deployed and debugged the stack on real robots, including network issues.</li>
               <li>Handled hardware failures and edge cases in the field.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="project-date">Mar 2026</p>
+            <div class="project-tag">Case 5</div>
+            <h2 class="project-title">Unitree Go2 EDU: Simulation, Networking, LiDAR &amp; CV Bring-up</h2>
+            <p class="project-subtitle">Lab platform setup in one work week</p>
+            <p>
+              Bring-up of a Unitree Go2 EDU for simulation and real-robot use: Gazebo + Nav2, ROS 2,
+              LiDAR, and RealSense CV — delivered in <strong>one work week</strong>.
+            </p>
+            <ul class="project-points">
+              <li>
+                Prepared and ran a Go2 simulation in Gazebo: confirmed basic Nav2 navigation behavior.
+              </li>
+              <li>
+                Inspected the robot after delivery, checked RC and the Unitree app, and configured ROS 2
+                over Ethernet with CycloneDDS on the correct network interface.
+              </li>
+              <li>
+                Configured Wi-Fi on the robot (adapter and drivers), connected it to the lab router, and
+                verified SSH and remote access over the wireless link.
+              </li>
+              <li>
+                Set up LiDAR point-cloud publishing and visualized the stream in RViz (PointCloud2 topics
+                and coordinate frames).
+              </li>
+              <li>
+                Integrated a RealSense D435i connected to robot's computer and published RGB and depth over ROS 2; tuned and optimized
+                the CV pipeline for this camera and streaming setup to run real-time detection (e.g. helmet
+                detection).
+              </li>
             </ul>
           </article>
         </div>
