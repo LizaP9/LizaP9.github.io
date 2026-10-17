@@ -33,8 +33,7 @@
           <div class="cv-header-grid">
             <div>
               <div class="cv-name">Elizaveta Pestova</div>
-              <div class="cv-role">Robotics Software Engineer | Control Systems</div>
-              <div class="cv-location">Moscow, Russia</div>
+              <div class="cv-role">Robotics Software Engineer | Simulation Engineer</div>
             </div>
             <div class="cv-contact">
               <a href="mailto:silverfrost.club@gmail.com">silverfrost.club@gmail.com</a>
@@ -57,10 +56,8 @@
         <div class="container cv-section">
           <h2 class="section-title">Summary</h2>
           <p>
-            Robotics software engineer with experience in a fast-moving startup environment, owning
-            autonomy features end-to-end, from problem framing and technical strategy to integration,
-            testing and real-robot deployment. Focused on control, locomotion and reinforcement
-            learning for humanoid and quadruped robots.
+            Robotics software engineer specializing in learning-based control for legged robots, owning autonomy features end-to-end, from problem framing and technical strategy to integration, testing, and real-robot deployment.
+            Responsible for making sure policies trained in simulation work on the real wheeled quadruped: building a robot model and environment, training skills in sim, and testing them on hardware.
           </p>
         </div>
       </section>
@@ -68,6 +65,43 @@
       <section class="section section-muted">
         <div class="container cv-section">
           <h2 class="section-title">Work experience (4 years)</h2>
+
+          <article class="cv-entry">
+            <header class="cv-entry-header">
+              <div>
+                <h3>Motion Planning Developer</h3>
+                <div class="cv-entry-company">MEALTY</div>
+              </div>
+              <div class="cv-entry-meta">
+                <div>Apr 2026 – present</div>
+              </div>
+            </header>
+            <ul>
+              <li>
+                Built a custom wheeled quadruped's simulation and control pipeline
+                from scratch, from raw CAD to policies running on the real robot.
+              </li>
+              <li>
+                Created a simulation-ready URDF model from CAD and identified model
+                and actuator parameters using motor specifications, motion logs
+                and numirical optimization.
+              </li>
+              <li>
+                Trained reinforcement learning and imitation learning policies
+                in Isaac Lab with domain randomization for sim-to-real transfer.
+              </li>
+              <li>
+                Developed a PD motor controller that converts policy position into high-rate torque commands sent to actuators over CAN.
+              </li>
+              <li>
+                Validated policies in MuJoCo, tested them on hardware and
+                successfully transferred them to the real robot.
+              </li>
+              <li>
+                Tools: Python, ROS 2, Isaac Sim/Isaac Lab, MuJoCo, URDF, Fusion 360, RViz, CAN.
+              </li>
+            </ul>
+          </article>
 
           <article class="cv-entry">
             <header class="cv-entry-header">
@@ -285,24 +319,71 @@
       <section class="section">
         <div class="container cv-section">
           <h2 class="section-title">Publications</h2>
+
           <ul class="publications-list">
             <li>
               Adaptive MPC-based quadrupedal robot control under periodic disturbances.
-              <span class="pub-meta">arXiv:2505.12361 — GitHub: Periodic-Adaptive-MPC</span>
+              <span class="pub-meta">
+                <a
+                  href="https://arxiv.org/abs/2505.12361"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >arXiv:2505.12361</a>
+                —
+                <a
+                  href="https://github.com/LizaP9/Periodic_Adaptive_MPC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >GitHub: Periodic-Adaptive-MPC</a>
+              </span>
             </li>
+
             <li>
               Quadrupedal Robot Skateboard Mounting via Reverse Curriculum Learning.
-              <span class="pub-meta">arXiv:2505.06561 — GitHub: quadruped-skateboard-mounting</span>
+              <span class="pub-meta">
+                <a
+                  href="https://arxiv.org/abs/2505.06561"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >arXiv:2505.06561</a>
+                —
+                <a
+                  href="https://github.com/dancher00/quadruped-skateboard-mounting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >GitHub: quadruped-skateboard-mounting</a>
+              </span>
             </li>
+
             <li>
-              Optimizing energy consumption for legged robot in cyclic tasks by adapting equilibrium
-              position and stiffness of a parallel torsion spring (IEEE ROBIO 2024).
-              <span class="pub-meta">arXiv:2411.18295 — GitHub: AdaptiveSpring</span>
+              Optimizing energy consumption for legged robot in cyclic tasks by adapting
+              equilibrium position and stiffness of a parallel torsion spring
+              (IEEE ROBIO 2024).
+              <span class="pub-meta">
+                <a
+                  href="https://arxiv.org/abs/2411.18295"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >arXiv:2411.18295</a>
+                —
+                <a
+                  href="https://github.com/dancher00/AdaptiveSpring"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >GitHub: AdaptiveSpring</a>
+              </span>
             </li>
+
             <li>
-              HyperSurf: Quadruped Robot Leg Capable of Surface Recognition with GRU and
-              Real-to-Sim Transferring (IEEE SMC 2024).
-              <span class="pub-meta">arXiv:2407.15622</span>
+              HyperSurf: Quadruped Robot Leg Capable of Surface Recognition with GRU
+              and Real-to-Sim Transferring (IEEE SMC 2024).
+              <span class="pub-meta">
+                <a
+                  href="https://arxiv.org/abs/2407.15622"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >arXiv:2407.15622</a>
+              </span>
             </li>
           </ul>
         </div>

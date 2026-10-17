@@ -687,3 +687,14 @@ button:focus-visible {
     text-align: left;
   }
 }
+
+
+.pub-meta a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.pub-meta a:hover {
+  text-decoration-thickness: 2px;
+}
